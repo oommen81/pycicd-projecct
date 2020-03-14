@@ -1,5 +1,6 @@
 import unittest
 from src import cicd
+from nose2 import tools
 
 
 class MyTestCase(unittest.TestCase):
