@@ -1,2 +1,2 @@
-pip install unittest
-pip install nose2
+unittest
+nose2
