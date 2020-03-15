@@ -16,7 +16,6 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(ret,3)
     def test_multi(self):
         #obj = cicd.cicd()
-
         mult = self.obj.process_multi(1,2)
         self.assertEqual(mult,3,"multi")
 
