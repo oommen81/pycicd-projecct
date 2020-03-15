@@ -17,7 +17,7 @@ class MyTestCase(unittest.TestCase):
     def test_multi(self):
         #obj = cicd.cicd()
         mult = self.obj.process_multi(1,2)
-        self.assertEqual(mult,2,"multi")
+        self.assertEqual(mult,3,"multi")
 
 
 if __name__ == '__main__':
