@@ -22,6 +22,7 @@ class MyTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
+    filename = "FILE_NAME_PLACE_HOLDER"
     suite = unittest.TestSuite()
     testfunctions = ['test_something','test_multi']
     for fns in testfunctions :
