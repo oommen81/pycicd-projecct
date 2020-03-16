@@ -12,6 +12,7 @@ class MyTestCase(unittest.TestCase):
         self.obj= cicd.cicd()
     def test_something(self):
         #obj = cicd.cicd()
+        print("test1")
         ret =self.obj.process_count(1,2)
         self.assertEqual(ret,3)
     def test_multi(self):
@@ -21,4 +22,9 @@ class MyTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    suite = unittest.TestSuite()
+    testfunctions = ['test_something','test_multi']
+    for fns in testfunctions :
+        suite.addTest(MyTestCase(fns))    #unittest.main()
+    unittest.TextTestRunner(verbosity=2).run(suite)
+
