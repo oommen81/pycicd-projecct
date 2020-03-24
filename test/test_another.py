@@ -23,7 +23,7 @@ class MyTestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    testfunctions = ['test_something','test_multi']
+    testfunctions = ['test_something']
     for fns in testfunctions :
         suite.addTest(MyTestCase(fns))    #unittest.main()
     unittest.TextTestRunner(verbosity=2).run(suite)
